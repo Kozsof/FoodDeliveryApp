@@ -24,8 +24,9 @@ public class RegistrationFragment extends Fragment {
             String password = binding.inputPassword.getInputText();
             String passwordRepeat = binding.inputPasswordRepeat.getInputText();
             String nickname = binding.inputNickname.getInputText();
-            Toast.makeText(getContext(), email + " " + password, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), email + "\n" + password + "\n" + nickname, Toast.LENGTH_SHORT).show();
         });
         return binding.getRoot();
+
     }
 }
